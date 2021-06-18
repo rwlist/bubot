@@ -1,9 +1,8 @@
 version: "3.7"
 services:
-  app:
+  bubot:
     build: .
-    ports:
-      - 8080:8080
+    image: bubot:latest
     env_file:
       - .env
     restart: unless-stopped
